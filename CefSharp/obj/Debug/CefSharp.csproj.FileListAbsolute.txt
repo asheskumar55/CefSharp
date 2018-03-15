@@ -1,0 +1,10 @@
+C:\Users\ashes\source\repos\CefSharp\CefSharp\bin\Debug\CefSharp.exe.config
+C:\Users\ashes\source\repos\CefSharp\CefSharp\bin\Debug\CefSharp.exe
+C:\Users\ashes\source\repos\CefSharp\CefSharp\bin\Debug\CefSharp.pdb
+C:\Users\ashes\source\repos\CefSharp\CefSharp\obj\Debug\CefSharp.csprojResolveAssemblyReference.cache
+C:\Users\ashes\source\repos\CefSharp\CefSharp\obj\Debug\CefSharp.Form1.resources
+C:\Users\ashes\source\repos\CefSharp\CefSharp\obj\Debug\CefSharp.Properties.Resources.resources
+C:\Users\ashes\source\repos\CefSharp\CefSharp\obj\Debug\CefSharp.csproj.GenerateResource.Cache
+C:\Users\ashes\source\repos\CefSharp\CefSharp\obj\Debug\CefSharp.csproj.CoreCompileInputs.cache
+C:\Users\ashes\source\repos\CefSharp\CefSharp\obj\Debug\CefSharp.exe
+C:\Users\ashes\source\repos\CefSharp\CefSharp\obj\Debug\CefSharp.pdb
