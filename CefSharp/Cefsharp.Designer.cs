@@ -37,19 +37,19 @@
             this.btnGo = new System.Windows.Forms.Button();
             this.pContainer = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.TopPanel = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.MinimizeButton = new System.Windows.Forms.Button();
+            this.MaximizeButton = new System.Windows.Forms.Button();
             this.CloseButton = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.panel8 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
+            this.TopPanel.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -110,7 +110,7 @@
             this.txtUrl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(32)))));
             this.txtUrl.Location = new System.Drawing.Point(221, 36);
             this.txtUrl.Name = "txtUrl";
-            this.txtUrl.Size = new System.Drawing.Size(22, 20);
+            this.txtUrl.Size = new System.Drawing.Size(29, 20);
             this.txtUrl.TabIndex = 2;
             // 
             // btnGo
@@ -122,7 +122,7 @@
             this.btnGo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGo.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.btnGo.ForeColor = System.Drawing.Color.White;
-            this.btnGo.Location = new System.Drawing.Point(884, 34);
+            this.btnGo.Location = new System.Drawing.Point(891, 34);
             this.btnGo.Name = "btnGo";
             this.btnGo.Size = new System.Drawing.Size(44, 23);
             this.btnGo.TabIndex = 1;
@@ -138,7 +138,7 @@
             this.pContainer.BackColor = System.Drawing.SystemColors.Window;
             this.pContainer.Location = new System.Drawing.Point(38, 63);
             this.pContainer.Name = "pContainer";
-            this.pContainer.Size = new System.Drawing.Size(904, 373);
+            this.pContainer.Size = new System.Drawing.Size(911, 373);
             this.pContainer.TabIndex = 3;
             // 
             // panel3
@@ -151,20 +151,21 @@
             this.panel3.Size = new System.Drawing.Size(41, 373);
             this.panel3.TabIndex = 0;
             // 
-            // panel1
+            // TopPanel
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.TopPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(32)))));
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.CloseButton);
-            this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(32)))));
-            this.panel1.Location = new System.Drawing.Point(-1, -1);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(943, 31);
-            this.panel1.TabIndex = 4;
+            this.TopPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(32)))));
+            this.TopPanel.Controls.Add(this.panel5);
+            this.TopPanel.Controls.Add(this.MinimizeButton);
+            this.TopPanel.Controls.Add(this.MaximizeButton);
+            this.TopPanel.Controls.Add(this.CloseButton);
+            this.TopPanel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(32)))));
+            this.TopPanel.Location = new System.Drawing.Point(-1, -1);
+            this.TopPanel.Name = "TopPanel";
+            this.TopPanel.Size = new System.Drawing.Size(950, 31);
+            this.TopPanel.TabIndex = 4;
+            this.TopPanel.DoubleClick += new System.EventHandler(this.TopPanel_DoubleClick);
             // 
             // panel5
             // 
@@ -207,35 +208,36 @@
             this.panel6.Size = new System.Drawing.Size(10, 34);
             this.panel6.TabIndex = 6;
             // 
-            // button3
+            // MinimizeButton
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(822, 9);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(16, 16);
-            this.button3.TabIndex = 0;
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button3.UseVisualStyleBackColor = true;
+            this.MinimizeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.MinimizeButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("MinimizeButton.BackgroundImage")));
+            this.MinimizeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MinimizeButton.FlatAppearance.BorderSize = 0;
+            this.MinimizeButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.MinimizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MinimizeButton.Location = new System.Drawing.Point(829, 9);
+            this.MinimizeButton.Name = "MinimizeButton";
+            this.MinimizeButton.Size = new System.Drawing.Size(16, 16);
+            this.MinimizeButton.TabIndex = 0;
+            this.MinimizeButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.MinimizeButton.Click += new System.EventHandler(this.MinimizeButton_Click_1);
             // 
-            // button2
+            // MaximizeButton
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(863, 9);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(16, 16);
-            this.button2.TabIndex = 0;
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button2.UseVisualStyleBackColor = true;
+            this.MaximizeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.MaximizeButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("MaximizeButton.BackgroundImage")));
+            this.MaximizeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MaximizeButton.FlatAppearance.BorderSize = 0;
+            this.MaximizeButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.MaximizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MaximizeButton.Location = new System.Drawing.Point(870, 9);
+            this.MaximizeButton.Name = "MaximizeButton";
+            this.MaximizeButton.Size = new System.Drawing.Size(16, 16);
+            this.MaximizeButton.TabIndex = 0;
+            this.MaximizeButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.MaximizeButton.UseVisualStyleBackColor = true;
+            this.MaximizeButton.Click += new System.EventHandler(this.MaximizeButton_Click);
             // 
             // CloseButton
             // 
@@ -245,7 +247,7 @@
             this.CloseButton.FlatAppearance.BorderSize = 0;
             this.CloseButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.CloseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CloseButton.Location = new System.Drawing.Point(904, 9);
+            this.CloseButton.Location = new System.Drawing.Point(911, 9);
             this.CloseButton.Name = "CloseButton";
             this.CloseButton.Size = new System.Drawing.Size(16, 16);
             this.CloseButton.TabIndex = 0;
@@ -260,14 +262,14 @@
             this.panel2.BackColor = System.Drawing.Color.Black;
             this.panel2.Location = new System.Drawing.Point(-1, 23);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(943, 10);
+            this.panel2.Size = new System.Drawing.Size(950, 10);
             this.panel2.TabIndex = 5;
             // 
             // bunifuDragControl1
             // 
             this.bunifuDragControl1.Fixed = true;
             this.bunifuDragControl1.Horizontal = true;
-            this.bunifuDragControl1.TargetControl = this.panel1;
+            this.bunifuDragControl1.TargetControl = this.TopPanel;
             this.bunifuDragControl1.Vertical = true;
             // 
             // panel8
@@ -283,9 +285,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(43)))), ((int)(((byte)(44)))));
-            this.ClientSize = new System.Drawing.Size(940, 441);
+            this.ClientSize = new System.Drawing.Size(947, 441);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.TopPanel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pContainer);
             this.Controls.Add(this.txtUrl);
@@ -300,7 +302,7 @@
             this.Text = "Chromium";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CefSharp_FormClosing);
             this.Load += new System.EventHandler(this.CefSharp_Load);
-            this.panel1.ResumeLayout(false);
+            this.TopPanel.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
@@ -317,9 +319,9 @@
         private System.Windows.Forms.TextBox txtUrl;
         private System.Windows.Forms.Button btnGo;
         private System.Windows.Forms.Panel pContainer;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Panel TopPanel;
+        private System.Windows.Forms.Button MinimizeButton;
+        private System.Windows.Forms.Button MaximizeButton;
         private System.Windows.Forms.Button CloseButton;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel5;

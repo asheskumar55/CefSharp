@@ -91,4 +91,3 @@ C:\Users\ashes\source\repos\CefSharp\CefSharp\obj\x64\Debug\CefSharp.exe
 C:\Users\ashes\source\repos\CefSharp\CefSharp\obj\x64\Debug\CefSharp.pdb
 C:\Users\ashes\source\repos\CefSharp\CefSharp\bin\x64\Debug\MetroFramework.dll
 C:\Users\ashes\source\repos\CefSharp\CefSharp\bin\x64\Debug\Bunifu_UI_v1.5.3.dll
-C:\Users\ashes\source\repos\CefSharp\CefSharp\obj\x64\Debug\CefSharp.csprojResolveAssemblyReference.cache
