@@ -1,1 +1,10 @@
 [0315/164412.727:ERROR:shader_disk_cache.cc(238)] Failed to create shader cache entry: -2
+[0315/182453.411:ERROR:shader_disk_cache.cc(238)] Failed to create shader cache entry: -2
+[0315/220955.031:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 5
+[0315/221015.950:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 11
+[0315/221016.051:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 13
+[0315/221016.153:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 15
+[0315/221328.949:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 3
+[0315/221329.107:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 5
+[0315/221331.189:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 17
+[0315/221349.858:WARNING:spdy_session.cc(2914)] Received HEADERS for invalid stream 51

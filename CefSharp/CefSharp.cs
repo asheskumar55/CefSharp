@@ -16,8 +16,12 @@ namespace CefSharp
         public CefSharp()
         {
             InitializeComponent();
+            //For resize property 
+            this.SetStyle(ControlStyles.ResizeRedraw, true);
+            //End
         }
 
+        //The all codes are for chromium property
         ChromiumWebBrowser chrome;
 
         private void CefSharp_Load(object sender, EventArgs e)
@@ -66,5 +70,42 @@ namespace CefSharp
         {
             Cef.Shutdown();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CloseButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        //End
+
+
+        //For resize Property 
+        private const int cGrip = 16;
+        private const int cCaption = 32;
+
+        protected override void WndProc(ref Message m)
+        {
+            if (m.Msg == 0X84)
+            {
+                Point pos = new Point(m.LParam.ToInt32());
+                pos = this.PointToClient(pos);
+                if (pos.Y < cCaption)
+                {
+                    m.Result = (IntPtr)2;
+                    return;
+                }
+                if (pos.X >= this.ClientSize.Width - cGrip && pos.Y >= this.ClientSize.Height - cGrip)
+                {
+                    m.Result = (IntPtr)17;
+                    return;
+                }
+            }
+            base.WndProc(ref m);
+        }
+        //End
     }
 }
